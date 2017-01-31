@@ -1,26 +1,26 @@
 
-oxymorons=set()
+foos=set()
 
 for line in open("oxymoronlist.txt"):
     words=line.split()
     words=[word.lower() for word in words]
-    oxymoronString=" ".join(words)
-    oxymorons.add(oxymoronString)
+    fooString=" ".join(words)
+    foos.add(fooString)
 
-print len(oxymorons)
+print len(foos)
 
-outFile1=open("oxy_1.txt","w")
-outFile2=open("oxy_2.txt","w")
-outFileMulti=open("oxyMulti.txt","w")
+outFile1=open("foo_1.txt","w")
+outFile2=open("foo_2.txt","w")
+outFileMulti=open("fooMulti.txt","w")
 
-for oxymoron in oxymorons:
-    words=oxymoron.split()
+for foo in foos:
+    words=foo.split()
     if len(words)==1:
-        outFile1.write(oxymoron+"\n")
+        outFile1.write(foo+"\n")
     if len(words)==2:
-        outFile2.write(oxymoron+"\n")
+        outFile2.write(foo+"\n")
     else:
-        outFileMulti.write(oxymoron+"\n")
+        outFileMulti.write(foo+"\n")
 
 outFile1.close()
 outFile2.close()
