@@ -9,4 +9,6 @@ foo_2.txt: Two word oxymorons
 
 foo_multi.txt : Multi word oxymorons
 
+contentFooList.txt: Some sentences with example oxymorons in context
+
 The examples are noisy and may contain terms/word pairs which could appear abusive/offensive or exhibit other biases
