@@ -4,7 +4,9 @@ This repository logs a list of oxymoronic word pairs/word phrases curated from v
 
 
 foo_1.txt: One word oxymorons [The oxymoron is found within the same word]
+
 foo_2.txt: Two word oxymorons
+
 foo_multi.txt : Multi word oxymorons
 
 
